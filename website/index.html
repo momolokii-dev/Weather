@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="w-app">
+            <div class="holder headline">
+                <h1 class="heading">Weather Journal</h1>
+            </div>
+
+            <form class="app-form" autocomplete="off">
+                <div class="holder zip">
+                    <input type="text" id="zip" maxlength="10" required="" placeholder="">
+                    <label for="zip" class="zip-label">Enter zip code here</label>
+                </div>
+                <div class="holder feel">
+                    <textarea class="feel-input" id="feelings" maxlength="25" required=""></textarea>
+                    <label for="feelings">How are you feeling today ?</label>
+                </div>
+                <button id="generate" type="submit"> Generate </button>
+            </form>
+
+            <div class="holder entry">
+                <h2 class="entry-title">Recent Entry</h2>
+                <div id="entryHold">
+                    <div class="entry-date">
+                        <div id="dates"></div>
+                    </div>
+                    <div class="entry-temp">
+                        <div id="temps"></div>
+                    </div>
+                    <div class="entry-content">
+                        <div id="contents"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

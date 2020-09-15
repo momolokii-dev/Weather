@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  padding: 5rem;
+  width: 100vw;
+}
+
+#w-app {
+  align-items: stretch;
+  background: transparent;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  width: 70vw;
+}
+
+/* Heading */
+
+.headline {
+  background-color: rgb(155, 153, 153);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.heading {
+  background: rgba(155, 153, 153, 0.753);
+  color: rgba(255, 68, 0, 0.815);
+  font-family: "Raleway", sans-serif;
+  font-size: 3.1rem;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 951px) {
+  .headline__heading {
+    font-size: 3.5rem;
+  }
+}
+
+/* Form-Section*/
+
+.app-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  min-height: 50%;
+  width: 70%;
+}
+
+.app-form div label {
+  color: rgb(199, 196, 196);
+  font-size: 1.5rem;
+  left: 2rem;
+  position: absolute;
+  top: 2rem;
+  transition: 0.5s;
+}
+
+#w-app input:focus,
+#w-app textarea:focus {
+  border: 0.2rem solid rgba(255, 68, 0, 0.815);
+}
+
+/* ZIP-Code */
+
+#zip,
+#feelings {
+  background: #383761;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  color: rgba(255, 68, 0, 0.815);
+  display: block;
+  font-size: 2.5rem;
+  height: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.zip {
+  position: relative;
+  width: 100%;
+}
+
+#zip {
+  padding: 1.4rem 1rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#zip:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(255, 68, 0, 0.815);
+  transition: all 5s ease-in-out 0s;
+}
+
+/* Feelings */
+
+.feel {
+  position: relative;
+  width: 100%;
+}
+
+#feelings {
+  overflow: hidden;
+  padding: 2.5rem;
+  resize: none;
+}
+
+/* Btn-Generate */
+
+#generate {
+  background: rgba(255, 68, 0, 0.815);
+  border: 0.2rem solid black;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem #444;
+  color: black;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  transition: all 0.1s;
+  width: 50%;
+}
+
+@media only screen and (min-width: 701px) {
+  #generate {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  #generate {
+    font-size: 2.5rem;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.entry {
+  background: rgba(68, 88, 131, 0.4);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  height: 13rem;
+  text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.entry-title {
+  color: rgba(255, 68, 0, 0.815);
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.9);
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+#entryHold {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 1051px) {
+  #entryHolder {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #entryHolder {
+    justify-content: center;
+  }
+}
+
+.entry-date,
+.entry-temp,
+.entry-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.entry-date {
+  margin-left: 5rem;
+}
+
+.entry-content {
+  justify-content: flex-start;
+  flex: 2;
+}
+
+@media only screen and (min-width: 1200px) {
+  .entry__content {
+    flex: none;
+  }
+}
+
+#date,
+#temp,
+#content {
+  padding: 0 4rem 0 2rem;
+}
